@@ -28,16 +28,21 @@ function myScript() {
   let wWidth = window.innerWidth;
   let wW = 0;
 
-  if (wWidth >= 1900) {
+  if (wWidth >= 1536) {
     wW = ((window.innerWidth * 0.5) / 8) * 4;
-  } else if (wWidth >= 1400) {
-    wW = ((window.innerWidth * 0.7) / 8) * 4;
-  } else if (wWidth >= 1200) {
+    console.log('1536');
+  } else if (wWidth >= 1280) {
+    wW = ((window.innerWidth * 0.66) / 8) * 4;
+    console.log('1280');
+  } else if (wWidth >= 1024) {
     wW = ((window.innerWidth * 0.8) / 8) * 4;
+    console.log('1024');
   } else if (wWidth >= 768) {
     wW = (window.innerWidth / 6) * 4;
+    console.log('768');
   } else {
     wW = (window.innerWidth / 3) * 4;
+    console.log('640');
   }
 
   document.querySelector('.header').style.height = wW + 'px';

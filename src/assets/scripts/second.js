@@ -4,7 +4,7 @@ window.onload = function () {
 }
 window.onresize = function () {
     myScriptSecond();
-    console.log('ventana redimensionada');
+    //console.log('ventana redimensionada');
 }
 
 window.onorientationchange = function () {
@@ -13,6 +13,30 @@ window.onorientationchange = function () {
 }
 
 function myScriptSecond() {
+
+    let wWidth = window.innerWidth;
+    let wW = 0;
+
+
+    if (wWidth >= 1536) {
+        wW = ((window.innerWidth * 0.5) / 8) * 4;
+        console.log('1536');
+    } else if (wWidth >= 1280) {
+        wW = ((window.innerWidth * 0.66) / 8) * 4;
+        console.log('1280');
+    } else if (wWidth >= 1024) {
+        wW = ((window.innerWidth * 0.8) / 8) * 4;
+        console.log('1024');
+    } else if (wWidth >= 768) {
+        wW = (window.innerWidth / 6) * 4;
+        console.log('768');
+    } else {
+        wW = (window.innerWidth / 3) * 4;
+        console.log('640');
+    }
+
+    document.querySelector('.header').style.height = wW + 'px';
+    console.log(wW);
     let tilesItems = document.querySelectorAll('.tile');
     let tilesItemsWidth = tilesItems[0].offsetWidth - 1;
     document.querySelector('#tile').style.height = (tilesItemsWidth - 1) + 'px';
