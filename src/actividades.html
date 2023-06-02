@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <script type="text/javasscript" src="assets/scripts/second.js"></script> 
+ 
+    <title>El Equipo</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="main--second escaques">
+        <div class="main__escaques escaques--6 negras tile extra-l"></div>  
+        <div class="main__escaques escaques--1 blancas tile extra-m"></div>
+        <div class="main__escaques escaques--4 neutro tile extra-m">
+            <div class="main__escaques ajuste neutro tile extra-m"></div>
+            <div class="main__escaques ajuste blancas tile extra-m"></div>
+        </div>
+        <div class="main__escaques escaques--2 main__content">
+            <h1>Descubre nuestras actividades</h1>
+            <p>Desde el Club de Ajedrez tenemos un montón de actividades que ofrecerte. Charlas, conferencias o clases magistrales.</p>
+            <p>Aquí te dejamos un listado de todas las actividades en las que trabajamos:</p>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Clases de Ajedrez
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Clases de Ajedrez desde los 6 años</strong> Ofrecemos clases a partir de los 6 años y también para adultos. Clases de teoría y práctica que te ayudarán a ser un maestro del ajedrez.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Clases magistrales
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Clases magistrales en vivo.</strong>Aprende de nuestro maestros con partidas comentadas en directo.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Torneos mensuales
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Porque lo mejor del ajedrez es jugar.</strong> Organizamos multiples torneos a lo largo del año para que nos puedas enseñar lo que has aprendido.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Charlas de las jugadas famosas
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Aprendemos de los mejores.</strong> Analizamos las partidas más famosas de la historia.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Biblioteca especializada
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>El mejor fondo bibliográfico.</strong> Disponemos de un montón de libros y manuales para que puedas aprender a tu ritmo.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2>Apúntate a nuestro club</h2>
+            <p>Queremos contar contigo. Envianos el formulario de contacto y te enviaremso toda la información para formar parte de nuestro club.</p>
+
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre de pila">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Escribe tu dirección de correo electrónico">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label id="privacy" class="form-check-label"  for="exampleCheck1">Estoy de acuerdo con la <a if="privacy" href="#" data-toggle="tooltip" title="
+                  No compartiremos los datos que nos facilites con nadie y
+                  solo los usaremos para ponernos en contacto contigo.">política de privacidad</a>.</label>
+
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary rounded-0">Enviar</button>
+            </form>
+        </div>
+        <div class="main__escaques escaques--5 neutro tile extra-l">
+          <div class="main__escaques ajuste neutro tile extra-m"></div>
+          <div class="main__escaques ajuste negras tile extra-m"></div>
+      </div>
+      <div class="main__escaques escaques--3 negras tile"></div>
+    </main>
+ 
+    <include src="./views/footer.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script>
+      const tooltip = bootstrap.Tooltip.getInstance('#privacy');
+    </script>
+  </script>
+</body>
+</html>
+
+
