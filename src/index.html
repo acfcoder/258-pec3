@@ -15,52 +15,58 @@
 <body class="font-body">
   <header class="header bg-cover bg-center bg-no-repeat" style="background-image: url(assets/images/fons_escacs.jpg);">
     <div class="grid grid-cols-8 grid-rows-4 grid-flow-row gap-0 w-4/5 mx-auto h-full">
-      <div class="col-start-3">
+      <div class="tile col-start-3">
         <div class="bg-cover w-full h-full" style="background-image: url(assets/images/new-logo.png);">
         </div>
       </div>
-      <div id="tile" class="grid col-start-6  bg-negras text-white" style="align-items: end;">
-        <a href="el-equipo.html" class="p-2.5 font-display" target="_parent">El Equipo</a>
+      <div id="tile" class="tile grid col-start-6 bg-negras hover:bg-blancas hover:text-negras text-white"
+        style="align-items: end;">
+        <a href="el-equipo.html" class="p-2.5 font-display text-xl" target="_parent">El Equipo</a>
       </div>
-      <div class="col-start-7 bg-blancas"></div>
-      <div class="grid bg-white text-negras col-start-5 col-row-2" style="align-items: end;">
-        <a href="el-club.html" class="p-2.5 font-mono" target="_parent">El Club</a>
+      <div class="tile col-start-7 bg-blancas"></div>
+      <div class="tile grid bg-white hover:bg-negras hover:text-white text-negras col-start-5 col-row-2"
+        style="align-items: end;">
+        <a href="el-club.html" class="p-2.5 font-display text-xl" target="_parent">El Club</a>
       </div>
-      <div class="bg-white text-negras col-start-7 row-start-2"></div>
-      <div class="grid bg-blancas text-negras col-start-5 col-row-3" style="align-items: end;">
-        <a href="actividades.html" class="p-2.5" target="_parent">Actividades</a>
+      <div class="tile bg-white text-negras col-start-7 row-start-2"></div>
+      <div class="tile grid bg-blancas hover:bg-negras hover:text-white text-negras col-start-5 col-row-3"
+        style="align-items: end;">
+        <a href="actividades.html" class="p-2.5 font-display text-xl" target=" _parent">Actividades</a>
       </div>
-      <div class="bg-white col-start-1 row-start-3"></div>
-      <div class="bg-negras col-start-8 row-start-3"></div>
-      <div class="bg-blancas text-negras col-start-2 row-start-4"></div>
-      <div class="bg-white col-start-6 row-start-4"></div>
+      <div class="tile bg-white col-start-1 row-start-3 "></div>
+      <div class="tile bg-negras col-start-8 row-start-3"></div>
+      <div class="tile bg-blancas text-negras col-start-2 row-start-4"></div>
+      <div class="tile bg-white col-start-6 row-start-4"></div>
     </div>
   </header>
-  <main class="main">
-    <div class="main__contenedor escaques">
-      <div class="main__escaques escaques--1 blancas tile extra-m"></div>
-      <div class="main__escaques escaques--2">
-        <div class="content">
-          <h1>Bienvenid@s a nuestro club</h1>
-          <p>Formado hace unos años por varios amigos, queremos abrir nuestro club a todo el barrio para compartir
-            nuestro amor por el ajedrez. Por eso organizamos consursos, torneos, talleres, cursos y charlas abierto a
-            todos los que quieran participar de nuestro proyecto. Bienvenido a nuestro club</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto dolore eius, doloribus, nam
-            consequuntur assumenda natus distinctio quaerat dolorum sint dolorem ducimus! Obcaecati vel facilis nisi
-            excepturi, consectetur culpa.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam dignissimos! Vero asperiores, culpa
-            accusamus cumque natus cum in animi minus molestias repellat alias commodi sapiente aspernatur iste, ipsa
-            ut.</p>
-        </div>
-      </div>
-      <div class="main__escaques escaques--3 negras tile"></div>
-      <div class="main__escaques escaques--4 blancas tile extra-m"></div>
-      <div class="main__escaques escaques--5 negras tile extra-l"></div>
-      <div class="main__escaques escaques--6 negras tile extra-l"></div>
+  <main class="main grid grid-cols-8 grid-rows-4 grid-flow-row gap-0 w-4/5 mx-auto">
+    <div class="tile col-start-1 bg-blancas h-9"></div>
+    <div class="col-start-4 col-span-3 row-span-4 p-9 ">
+
+      <h1 class=" font-display text-4xl">Bienvenid@s a nuestro club</h1>
+      <p class="my-5 leading-7">Formado hace unos años por varios amigos, queremos abrir nuestro club a todo el barrio
+        para
+        compartir
+        nuestro amor por el ajedrez. Por eso organizamos consursos, torneos, talleres, cursos y charlas abierto a
+        todos los que quieran participar de nuestro proyecto. Bienvenido a nuestro club</p>
+      <p class="my-5 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto dolore eius,
+        doloribus, nam
+        consequuntur assumenda natus distinctio quaerat dolorum sint dolorem ducimus! Obcaecati vel facilis nisi
+        excepturi, consectetur culpa.</p>
+      <p class="my-5 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam dignissimos! Vero
+        asperiores,
+        culpa
+        accusamus cumque natus cum in animi minus molestias repellat alias commodi sapiente aspernatur iste, ipsa
+        ut.</p>
+
     </div>
+    <div class="tile col-start-2 row-start-1 bg-negras"></div>
+    <div class="tile col-start-8 bg-negras row-start-1"></div>
+    <div class="tile col-start-7 row-start-2 bg-negras"></div>
+    <div class="tile col-start-3 row-start-3 bg-blancas"></div>
   </main>
   <include src="./views/footer.html"></include>
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <script type="module" src="./assets/scripts/second.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>
