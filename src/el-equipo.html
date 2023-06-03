@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <script type="text/javasscript" src="assets/scripts/second.js"></script> 
-    <title>Actividades</title>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <script type="text/javasscript" src="assets/scripts/second.js"></script>
+    <title>El equipo</title>
+</head>
+
+<body>
     <include src="./views/header.html"></include>
-    <main class="main--second escaques">
-        <div class="main__escaques escaques--6 negras tile extra-l"></div>  
-        <div class="main__escaques escaques--1 blancas tile extra-m"></div>
-        <div class="main__escaques escaques--4 neutro tile extra-m">
-            <div class="main__escaques ajuste neutro tile extra-m"></div>
-            <div class="main__escaques ajuste blancas tile extra-m"></div>
+    <main class="flex w-full xl:w-4/5 2xl:w-2/3 3xxl:w-1/2 mx-auto h-full">
+        <div class="tile hidden bg-negras xl:block">0</div>
+        <div class="tile bg-negras md:bg-blancas">1</div>
+        <div class="hidden md:block">
+            <div class="tile bg-transparent"></div>
+            <div class="tile bg-blancas"></div>
         </div>
-        <div class="main__escaques escaques--2 main__content">
-            <h1>El Equipo</h1>
-            <p>Apasionados del ajedrez pero, sobretodo buenos amigos. Nos presentamos.</p>  
-            <gallery class="gallery">
-                <div class="card text-center first-card">
-                    <img src="assets/images/equipo/099073.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Pedro Montes</h5>
-                        <p class="card-text">Ficha favorita<br>Torre</p>
+        <div class="p-4 grow w-0">
+            <h1 class="font-display text-4xl">El Equipo</h1>
+            <p class="my-5 leading-7">Apasionados del ajedrez pero, sobretodo buenos amigos. Nos presentamos.</p>
+            <gallery class="flex flex-wrap justify-center cards">
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099073.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Pedro Montes</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Torre</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099094.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Virginia Flores</h5>
-                        <p class="card-text">Ficha favorita<br>Caballo</p>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099094.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Virginia Flores</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Caballo</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099116.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Eugenio Tebas</h5>
-                        <p class="card-text">Ficha favorita<br>Alfil</p>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099116.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Eugenio Tebas</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Alfil</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099180.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Pedro Sánchez</h5>
-                        <p class="card-text">Ficha favorita<br>Caballo</p>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099180.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Pedro Sánchez</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Caballo</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099243.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Juan Maroto</h5>
-                        <p class="card-text">Ficha favorita<br>Alfil</p>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099243.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Juan Maroto</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Alfil</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099256.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Lucrecia Tena</h5>
-                        <p class="card-text">Ficha favorita<br>Torre</p>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099256.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Lucrecia Tena</h5>
+                        <p class="font-display text-lg">Ficha favorita<br>Torre</p>
                     </div>
                 </div>
-                <div class="card text-center">
-                    <img src="assets/images/equipo/099306.jpg" alt="Card image cap" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Patricia Pimentel</h5>
+                <div class="rounded border-negras border text-center mx-1.5 my-2 min-w-[149px] grow md:w-0 w-full card">
+                    <img src="assets/images/equipo/099306.jpg" alt="Card image cap" class="rounded-t">
+                    <div class="py-5">
+                        <h5 class="font-display text-2xl m-3">Patricia Pimentel</h5>
                         <p class="card-subtitle mb-2">Ficha favorita<br>
-                        Caballo</p>
+                            Caballo</p>
                     </div>
-                </div>              
-            </gallery>           
+                </div>
+            </gallery>
         </div>
-        <div class="main__escaques escaques--5 neutro tile extra-l">
-            <div class="main__escaques ajuste neutro tile extra-m"></div>
-            <div class="main__escaques ajuste negras tile extra-m"></div>
+        <div class="hidden xl:block">
+            <div class="tile bg-transparent"></div>
+            <div class="tile bg-negras"></div>
         </div>
-        <div class="main__escaques escaques--3 negras tile"></div>
-        
+        <div class="hidden md:block bg-negras tile"></div>
+
     </main>
     <include src="./views/footer.html"></include>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
 </body>
-   </body>
-</html>
+</body>
 
+</html>

@@ -14,42 +14,40 @@
 
 <body class="font-body">
   <header class="header bg-cover bg-center bg-no-repeat" style="background-image: url(assets/images/fons_escacs.jpg);">
-    <div
-      class="grid w-full gap-0 grid-cols-3 md:grid-cols-6 lg:grid-cols-8 grid-rows-4 grid-flow-row lg:w-4/5 xl:w-2/3 2xl:w-1/2 mx-auto h-full ">
-      <div class="tile col-start-1 md:col-start-2 lg:col-start-3">
+    <div class="canvas">
+      <div class="tile col-start-1 md:col-start-2 xl:col-start-3">
         <div class="bg-cover w-full h-full" style="background-image: url(assets/images/new-logo.png);">
         </div>
       </div>
       <div id="tile"
-        class="tile grid col-start-3 md:col-start-5 lg:col-start-6 row-start-1 bg-negras hover:bg-blancas hover:text-negras text-white"
+        class="tile grid col-start-3 md:col-start-5 xl:col-start-6 row-start-1 bg-negras hover:bg-blancas hover:text-negras text-white"
         style="align-items: end;">
         <a href="el-equipo.html" class="p-2.5 font-display text-xl" target="_parent">El Equipo</a>
       </div>
-      <div class="tile hidden md:block md:col-start-6 lg:col-start-7 row-start-1 bg-blancas">7</div>
+      <div class="tile hidden md:block md:col-start-6 xl:col-start-7 row-start-1 bg-blancas"></div>
       <div
-        class="tile grid bg-white col-start-2 hover:bg-negras hover:text-white text-negras md:col-start-4 lg:col-start-5 row-start-2"
+        class="tile grid bg-white col-start-2 hover:bg-negras hover:text-white text-negras md:col-start-4 xl:col-start-5 row-start-2"
         style="align-items: end;">
         <a href="el-club.html" class="p-2.5 font-display text-xl" target="_parent">El Club</a>
       </div>
-      <div class="tile hidden md:block md:col-start-6 bg-white text-negras lg:col-start-7 row-start-2">6</div>
+      <div class="tile hidden md:block md:col-start-6 bg-white text-negras xl:col-start-7 row-start-2"></div>
       <div
-        class="tile grid bg-blancas hover:bg-negras hover:text-white text-negras col-start-2 md:col-start-4 lg:col-start-5 row-start-3"
+        class="tile grid bg-blancas hover:bg-negras hover:text-white text-negras col-start-2 md:col-start-4 xl:col-start-5 row-start-3"
         style="align-items: end;">
         <a href="actividades.html" class="p-2.5 font-display text-xl" target=" _parent">Actividades</a>
       </div>
-      <div class="tile hidden lg:block bg-white col-start-1 row-start-3">8</div>
-      <div class="tile hidden lg:block bg-negras col-start-8 row-start-3">9</div>
-      <div class="tile hidden md:block bg-blancas text-negras col-start-2 row-start-4">10</div>
-      <div class="tile bg-white col-start-3 md:col-start-5 lg:col-start-6 row-start-4">11</div>
+      <div class="tile hidden xl:block bg-white col-start-1 row-start-3"></div>
+      <div class="tile hidden xl:block bg-negras col-start-8 row-start-3"></div>
+      <div class="tile hidden md:block bg-blancas text-negras col-start-2 row-start-4"></div>
+      <div class="tile bg-white col-start-3 md:col-start-5 xl:col-start-6 row-start-4"></div>
     </div>
   </header>
-  <main
-    class="main grid w-full gap-0 grid-cols-3 md:grid-cols-6 lg:grid-cols-8 md:gid-rows-5 lg:grid-rows-7  grid-flow-row lg:w-4/5 xl:w-2/3 2xl:w-1/2 mx-auto h-full">
-    <div class="tile hidden md:block col-start-1 bg-blancas">1</div>
+  <main class="main canvas">
+    <div class="tile hidden md:block col-start-1 bg-blancas"></div>
     <div
-      class="col-start-2 col-span-2 row-span-5 lg:row-span-7 md:col-start-3 md:col-span-3 lg:col-start-4 row-start-1 p-9 ">
+      class="col-start-2 col-span-2 row-span-5 xl:row-span-7 md:col-start-3 md:col-span-3 xl:col-start-4 row-start-1 p-9 ">
 
-      <h1 class=" font-display text-4xl">Bienvenid@s a nuestro club</h1>
+      <h1 class="font-display text-4xl">Bienvenid@s a nuestro club</h1>
       <p class="my-5 leading-7">Formado hace unos años por varios amigos, queremos abrir nuestro club a todo el barrio
         para
         compartir
@@ -66,10 +64,10 @@
         ut.</p>
 
     </div>
-    <div class="tile col-start-1 lg:col-start-2 row-start-1 bg-negras md:hidden lg:block">2</div>
-    <div class="tile hidden lg:block col-start-6 lg:col-start-8 bg-negras row-start-1">3</div>
-    <div class="tile  hidden md:block md:col-start-6 lg:col-start-7 row-start-2 bg-negras">4</div>
-    <div class="tile  hidden md:block md:col-start-2 lg:col-start-3 md:row-start-2 lg:row-start-3 bg-blancas">5</div>
+    <div class="tile col-start-1 xl:col-start-2 row-start-1 bg-negras md:hidden xl:block"></div>
+    <div class="tile hidden xl:block col-start-6 xl:col-start-8 bg-negras row-start-1"></div>
+    <div class="tile  hidden md:block md:col-start-6 xl:col-start-7 row-start-2 bg-negras"></div>
+    <div class="tile  hidden md:block md:col-start-2 xl:col-start-3 md:row-start-2 xl:row-start-3 bg-blancas"></div>
   </main>
   <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/second.js"></script><!-- do not remove this line! -->

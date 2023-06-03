@@ -45,7 +45,10 @@ function myScript() {
     console.log('640');
   }
 
-  document.querySelector('.header').style.height = wW + 'px';
+  if (isset(document.querySelector('header'))) {
+    document.querySelector('.header').style.height = wW + 'px';
+  }
+
   let headerTile = document.querySelector("#tile").offsetHeight;
   let headerHeight = document.querySelector('.header').offsetHeight;
 

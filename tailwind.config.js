@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'display': ['"Akshar"', 'ui-sans-serif'],
         'body': ['ui-sans-serif', '"Arial"', '"Roboto"'],
+      },
+      screens: {
+        '3xxl': '1900px',
       }
     },
   },

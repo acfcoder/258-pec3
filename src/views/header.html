@@ -1,22 +1,23 @@
 <header class="header--second">
-    <div class="header__contenedor">
-      <div class="header__logo">
-          <div class="header__logo--img">
-              <a href="index.html">
-               <img src="assets/images/new-logo.png" alt="Logo">  
-              </a>
-          </div>
-      </div>
-      <div class="header__nav">     
-          <div id="title" class="header__item item--2 tile blancas enlace">
-              <a href="el-club.html" target="_parent">El Club</a>
-          </div>
-          <div id="tile" class="header__item item--1 tile negras enlace">
-              <a href="el-equipo.html" target="_parent">El Equipo</a>
-          </div>
-          <div class="header__item item--3 blancas tile enlace">
-              <a href="actividades.html" target="_parent">Actividades</a>
-          </div>
-      </div>    
+    <div class="canvas">
+        <div class="tile col-start-1 md:col-start-2 xl:col-start-3">
+            <a href="index.html" target="_self">
+                <div class="bg-cover w-full h-full" style="background-image: url(assets/images/new-logo.png);">
+                </div>
+            </a>
+        </div>
+        <div id="tile"
+            class="tile grid col-start-3 md:col-start-5 xl:col-start-7 row-start-2 md:row-start-1 bg-negras hover:bg-blancas hover:text-negras text-white"
+            style="align-items: end;">
+            <a href="el-equipo.html" class="p-2.5 font-display text-xl" target="_parent">El Equipo</a>
+        </div>
+        <div class="tile grid bg-blancas col-start-3 md:col-start-4 row-start-1 hover:bg-negras hover:text-white text-negras xl:col-start-6"
+            style="align-items: end;">
+            <a href="el-club.html" class="p-2.5 font-display text-xl" target="_parent">El Club</a>
+        </div>
+        <div class="tile grid bg-blancas hover:bg-negras hover:text-white text-negras col-start-2 md:col-start-6 row-start-2 md:row-start-1 xl:col-start-8"
+            style="align-items: end;">
+            <a href="actividades.html" class="p-2.5 font-display text-xl" target=" _parent">Actividades</a>
+        </div>
     </div>
-  </header>
+</header>
